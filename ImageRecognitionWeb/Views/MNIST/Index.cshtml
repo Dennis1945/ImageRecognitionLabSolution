@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "MNIST";
+}
+
+<h1>MNIST Web Demo</h1>
+<br />
+<br />
+<div class="row col-12">
+    <div class="col-4 text-center">
+        <div class="canvas-container col-6" style="width: 280px; height: 280px; position: relative; -webkit-user-select: none;">
+            <canvas id="c" width="280" height="280" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 280px; height: 280px; left: 0px; top: 0px; -webkit-user-select: none;" class="lower-canvas"></canvas>
+        </div>
+        <hr />
+        <input type="hidden" id="mnist_input" name="mnist_input" />
+        <button id="recognize" class="btn btn-info" type="button">Recognize</button>&nbsp;
+        <button id="clear-canvas" class="btn btn-info">Clear</button>
+    </div>
+    <div class="col-8">
+        <p>
+            Prediction: <strong id="predValue"></strong>
+        </p>
+        <p>
+            Accuracy: <strong id="predAcc"></strong>
+        </p>
+    </div>
+</div>
+
+@section Scripts
+    {
+    @*<script src="~/js/fabric.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.5.0/fabric.js"></script>
+    <script src="~/js/mnist-canvas.js"></script>
+}
