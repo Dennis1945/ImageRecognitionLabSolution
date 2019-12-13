@@ -1,4 +1,4 @@
-# 2019 AI_Boot Camp ML.NET
+# 2019 AI Boot Camp ML.NET
 
 # 필요한 설치 요구 사항
 
